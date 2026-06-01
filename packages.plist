@@ -1,0 +1,19 @@
+{
+	packages = {
+		plugins = (
+			{
+				titles = {
+					en = "Template Manager";
+				};
+				url = "https://github.com/telemetry/GlyphsTemplateManager";
+				path = "TemplateManager.glyphsPlugin";
+				descriptions = {
+					en = "*Edit > Template Manager…* saves a font's structure — glyph set, kerning groups, kerning values, masters and metrics — as a reusable, outline-free template, and creates new untitled documents from it. Start every project with your base character set and pre-wired kerning groups already in place.";
+				};
+				dependencies = (
+					vanilla
+				);
+			},
+		);
+	};
+}
