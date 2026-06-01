@@ -14,15 +14,15 @@ Adds **Edit → Template Manager…** to Glyphs.
 This installs through the **Plugin Manager**, which also installs the required
 modules (Vanilla, Python) automatically.
 
-1. In Glyphs: **Settings → Addons → Alternate Plugin Repos** → click **+** and paste:
+1. In Glyphs: **Settings → Addons → Alternate Plugin Repos** → click **+** and
+   paste this, then OK:
    ```
    https://raw.githubusercontent.com/telemetry/GlyphsTemplateManager/main/packages.plist
    ```
-2. **Window → Plugin Manager → Plugins** → find **Template Manager** → **Install**.
-   (If prompted to also install **Vanilla**/**Python**, accept.)
-3. **Quit and relaunch Glyphs** (⌘Q, then reopen).
-
-Then use it from **Edit → Template Manager…**
+2. Go to **Window → Plugin Manager → Plugins**, find **Template Manager**, click
+   **Install**. If it offers to also install **Vanilla**, accept.
+3. **Quit Glyphs (⌘Q) and reopen it.**
+4. Open a font, then go to **Edit → Template Manager…**
 
 If the menu item doesn't appear, open **Window → Macro Panel** and run
 `import objc, vanilla; print(objc.__version__)` — a version number means the
@@ -48,9 +48,10 @@ privacy protection blocks Glyphs from following symlinks into Desktop/Documents.
 
 1. Open a font you want to template.
 2. **Edit → Template Manager…**
-3. **Save Current Font as Template…** — names it and stores an outline-free copy.
+3. **Save Current Font as Template…** — stores an outline-free copy (keeps glyph
+   set, kerning groups, kerning, masters and metrics).
 4. **New Document from Selected Template** — opens a fresh untitled font with the
-   same glyphs (empty), kerning groups, kerning, masters and metrics.
+   same glyphs (empty) and all your kerning groups already wired up.
 
 Templates are stored in `~/Library/Application Support/Glyphs 3/Templates/`.
 
